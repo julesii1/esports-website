@@ -9,6 +9,7 @@ html {
 
 /*  BODY */
 body {
+  border: 1px solid black;
   font-family: 'Tangerine', serif; /* google fonts */
   background-color: var(--bgbody);
 }
@@ -34,6 +35,7 @@ nav {
 }
 
 ul {
+  border: 1px solid black;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -45,6 +47,7 @@ ul {
 }
 
 li a {
+  border: 1px solid black;
   display: block;
   color: #000000;
   text-align: center;
