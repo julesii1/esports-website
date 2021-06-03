@@ -3,42 +3,49 @@
 /* VARIABLES */
 
 html {
-
+  --bgbody: #02055a;
+  --bgheader:#1857d6;
 }
 
 /*  BODY */
-     body {
-     font-family: 'Tangerine', serif; /* google fonts */
+body {
+  font-family: 'Tangerine', serif; /* google fonts */
+  background-color: var(--bgbody);
+}
 
-    
+.container {
+  width:100%;
+}
 
-     }
 /*  HEADER */
 .header {
-  background-color: #1857d6;
-  
-  
-
+  background-color: var(--bgheader);
+  padding:20px;
+  margin-bottom:5px;
+  /*width=100%;*/
 }
 /*  NAVBAR */
 
 /*  Source: https://www.w3schools.com/css/css_navbar_vertical.asp */
 nav {
-  text-align:right;
   overflow: hidden;
-  
+  float:right;
+  padding-right:15.12%;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 80px;
+  width: 15%;
   background-color: #1857d6;
-  float: right;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
 
 li a {
-  float: left;
+  display: block;
   color: #000000;
   text-align: center;
   padding: 14px 16px;
@@ -57,7 +64,12 @@ li a:hover:not(.active) {
 }
 
 /*  CONTENT */
-
+#content-img {
+  text-align:center;
+  overflow: hidden;
+  width:100%;
+  object-fit: cover;
+}
 
 /*  FOOTER */
 <div class="footer">
